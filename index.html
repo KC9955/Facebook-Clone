@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    /> -->
+    <title>Facebook – log in or sign up</title>
+    <link
+      rel="icon"
+      href="https://www.facebook.com/images/fb_icon_325x325.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="recent-login">
+          <img  id="facebook" src="	https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+          alt="facebook-logo">
+          <div id="title">Recent Logins</div>
+          <div id="subtitle">Click your picture or add an account.</div>
+          <div id="card">
+            <div id="card-1">
+              <div id="cancel"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></div>
+              <img
+                class="card-1-img"
+                src="https://images.unsplash.com/photo-1542206395-9feb3edaa68d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                alt="Profile"
+              />
+              <div class="username">Ana</div>
+            </div>
+            <div id="card-2">
+
+              <img
+              class="card-2-img"
+              src="image 4 (1).png"
+              alt="add-account"
+            />
+              <div id="add-account" class="username">Add Account</div>
+            </div>
+          </div>
+        </div>
+        <div id="login">
+            <input type="email" placeholder="Email or Phone Number">
+            <input type="password" placeholder="Password">
+            <input type="button" value="Log In" id="login-button">
+            <a href="#">Forgot Password?</a><div class="hr"></div>
+            <!-- <hr style="width: 95%;"> -->
+            <input type="button" value="Create New Account" id="create-new-account" class="new-account">
+            <p><strong>Create a Page</strong>  for a celebrity, brand or business.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div>
+        English (UK)
+        ગુજરાતી
+        हिन्दी
+        मराठी
+        اردو
+        ਪੰਜਾਬੀ
+        தமிழ்
+        తెలుగు
+        বাংলা
+        മലയാളം
+        Españo <img src="image 5.png" height="12px">
+        <!-- <hr style="width: 100%;">--><div id="hr"></div>
+        Sign Up Log InMessenger Facebook Lite Watch Places Games Marketplace Facebook PayOculus Portal 
+        Instagram Bulletin Local 
+        <br>
+        Fundraisers Services Voting Information Centre Groups About Create ad Create Page Developers Careers Privacy Cookies AdChoices<img 
+        src="data:image/png;base64,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" height="12px"> Terms 
+        <br>
+        Help Contact uploadingandnon-users Settings Activity log
+        <br><br>
+        Meta © 2022
+    </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
